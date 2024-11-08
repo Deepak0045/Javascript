@@ -84,8 +84,16 @@ console.log(`x:${x}, y:${y}`);
 // y is 3 (it got the value of x before the increment happened).
 
 
-
 let a = 3;
 const b = ++a;
 
+// ++a is a pre-increment operator, meaning it increments a first, then returns the new value of a.
+// So, a is immediately incremented from 3 to 4.
+// b is then assigned this new value of a, which is 4.
+// After the operation:
+
+// a is now 4 (it was incremented).
+// b is also 4 (it received the incremented value of a).
+
 console.log(`a:${a}, b:${b}`);
+// Expected output: "a:4, b:4
