@@ -1,12 +1,14 @@
-let score = 33
-console.log(typeof score);
+let score = 33;
+console.log(score); // 33
+console.log(typeof score); // number
 
-let score2 = '33ab'
-console.log(typeof score2);
+let score2 = '33ab';
+console.log(score2); // 33ab
+console.log(typeof score2); // string
 
-let valueInNumber = Number(score2)
-console.log(typeof valueInNumber);
-console.log(valueInNumber);
+let valueInNumber = Number(score2);
+console.log(valueInNumber); // NaN
+console.log(typeof valueInNumber); // number
 
 // '33' ==> 33
 // '33abc' ==> NaN

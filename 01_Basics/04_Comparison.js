@@ -24,6 +24,7 @@ console.log(null < 0);       // false: null is not less than 0
 console.log(null == 0);      // false: null is only loosely equal to `undefined`, not to 0
 console.log(null >= 0);      // true: in non-strict comparisons, `null` is converted to 0, so 0 >= 0 is true
 
+
 // The reason null >= 0 is true while null > 0 is false is due to JavaScript's type conversion rules 
 // in relational comparisons. When using >=, JavaScript converts null to 0, 
 // so the comparison becomes 0 >= 0, which is true. However, null is neither greater than nor less than 0 on its own.
@@ -39,8 +40,10 @@ console.log(undefined == 0); // false: undefined is not equal to 0
 console.log(undefined > 0);  // false: undefined is not greater than 0
 console.log(undefined < 0);  // false: undefined is not less than 0
 
+
 // JavaScript does not convert undefined to any number when comparing it to another value. 
 //undefined is only loosely equal to null but not to numbers or strings.
+
 
 // Loose vs. Strict Equality
 // Finally, the difference between == (loose equality) and === (strict equality):
